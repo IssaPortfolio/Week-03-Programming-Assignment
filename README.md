@@ -1,6 +1,6 @@
 Write a Item Shipping Calculator program that does the following:
 
-• Prompt and retrieve the following input from the user (through the console):
+Prompt and retrieve the following input from the user (through the console):
 
     • Item name
   
@@ -11,7 +11,7 @@ Write a Item Shipping Calculator program that does the following:
     • The destination to which the item will be shipped (USA, Canada, Australia)  
   
   
-• Use the following table to determine the calculations to perform:
+Use the following table to determine the calculations to perform:
 
                
 |    Order Total:    | Ship to USA: | Ship to Canada: | Ship to Australia: |
