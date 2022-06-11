@@ -17,11 +17,11 @@ Use the following table to determine the calculations to perform:
 |    Order Total:    | Ship to USA: | Ship to Canada: | Ship to Australia: |
 |--------------------|--------------|-----------------|--------------------|
 | Less Than $50.00   | $6.00        | $8.00           | $10.00             |
-|                    |              |                 |                    |
+|                                                                          |
 | $50.01 to $100.00  | $9.00        | $12.00          | $14.00             |
-|                    |              |                 |                    |
+|                                                                          |
 | $100.01 to $150.00 | $12.00       | $15.00          | $17.00             |
-|                    |              |                 |                    |
+|                                                                          |
 | Over $150.00       | Free         | Free            | Free               |
 
   
