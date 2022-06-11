@@ -75,11 +75,11 @@ int main()
     //// IF FRAGILE ////
     const string  IS_FRAGILE_SENTENCE= "Is the item fragile? (y=yes/n=no)";
     cout << right << setw(49) << left << IS_FRAGILE_SENTENCE << ":";
-    char fragile_input;
+    string fragile_input;
     cin >> fragile_input;
     fOutStream << right << setw(49) << left << IS_FRAGILE_SENTENCE << ":" << fragile_input << endl;
     // CHECKS IF INPUT IS VALID
-    if ((fragile_input != 'y' && fragile_input != 'Y') && (fragile_input != 'n' && fragile_input != 'N'))
+    if ((fragile_input != "y" && fragile_input != "Y") && (fragile_input != "n" && fragile_input != "N"))
     { 
         cout << "\n" << INVALID_INPUT_SENTENCE << endl;
         system("pause");
@@ -165,7 +165,7 @@ int main()
     }
 
     // FRAGILE FEE
-    if (fragile_input == 'y' || fragile_input == 'Y')
+    if (fragile_input == "y" || fragile_input == "Y")
         shipping_cost += 2.00;
     else
         shipping_cost += 0;
@@ -191,8 +191,7 @@ int main()
 
     //// THANK YOU MESSAGE ////
     cout << "\n" << left << setfill('-') << setw(50) << endl << right << "Thank You!" << endl;
-    fOutStream << "\n" << left << setfill('-') << setw(50) << endl << right << "Thank You!" << endl;
-
+    fOutStream << endl << endl << endl;
    
     fOutStream.close();
 
