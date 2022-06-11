@@ -209,19 +209,20 @@ int main()
     watched "I/O Demo 2" on Canvas.
 
 
-    I believe the way I am outputting is not ideal, such as "cout << right << setw(40) << left <<" as it is repitive 
+    I believe the way I am outputting is not ideal, such as "cout << right << setw(40) << left <<" as it is repetitive 
     but I am not sure how else I could do it. I have tried putting "setw(int)" and such where I have my defaults for
     my output streams (line 48 and 49) but I could not get it to work properly. 
 
 
     This is where the shipping cost is calculated, the example below is for USA.
 
-    if (destination_input == "USA")                                    We get what "destination_input" because the user inputs it. 
+    if (destination_input == "USA")                                    We get what "destination_input" is because the user inputs it at line 101.
     {
         if (subtotal_input < 50)                                       A range (if subtotal_input is less than 50)
             shipping_cost += 6.00;                                     Adds 6 to double variable "subtotal_input" if conditional is true.
-        else if (subtotal_input >= 50 && subtotal_input <= 100)        "else if" means if first conditional (line 219) was not true then it would get here but if it was true
-                                                                       then it would ignore "else if" statements (this leads to saving computer resources, or processing power).
+        else if (subtotal_input >= 50 && subtotal_input <= 100)        "else if" means if first conditional (line 219) was not true then it would get here
+                                                                       but if it was true then it would ignore "else if" statements 
+                                                                       (this leads to saving computer resources, or processing power).
             shipping_cost += 9.00;
         else if (subtotal_input >= 100.01 && subtotal_input <= 150)
             shipping_cost += 12.00;
