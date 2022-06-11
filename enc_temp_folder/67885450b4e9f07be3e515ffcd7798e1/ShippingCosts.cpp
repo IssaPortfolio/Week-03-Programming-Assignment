@@ -216,7 +216,7 @@ int main()
 
     This is where the shipping cost is calculated, the example below is for USA.
 
-    if (destination_input == "USA")                                    We get what "destination_input" because the user inputs it. 
+    if (destination_input == "usa")                                    We get what "destination_input" because the user inputs it. 
     {
         if (subtotal_input < 50)                                       A range (if subtotal_input is less than 50)
             shipping_cost += 6.00;                                     Adds 6 to double variable "subtotal_input" if conditional is true.

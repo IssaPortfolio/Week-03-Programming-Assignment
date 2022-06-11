@@ -1,0 +1,17 @@
+..................................................
+ITCS 2530 - Programming Assignment for week #3
+..................................................
+
+
+Please enter the item name (no spaces)...........:cAr
+Is the item fragile? (y=yes/n=no)................:N
+Please enter your order total....................:149.00
+Please enter destination. (usa/can/aus)..........:CAn
+
+Your item is............................CAR
+Your shipping cost is...................$15.00
+You are shipping to.....................CAN
+Your total shipping costs are...........$164.00
+
+
+
