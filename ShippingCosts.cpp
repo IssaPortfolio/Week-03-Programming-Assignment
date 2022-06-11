@@ -68,6 +68,7 @@ int main()
     string item_name_input;
     cin >> item_name_input;  // INPUT
     fOutStream << right << setw(49) << left << ITEM_NAME_SENTENCE << ":" << item_name_input << endl;
+    transform(item_name_input.begin(), item_name_input.end(), item_name_input.begin(), toupper);  // MAKES STRING VARIABLE UPPERCASE
 
 
     //********* IF FRAGILE *********//
@@ -116,7 +117,6 @@ int main()
     //********* NAME OF ITEM *********//
     const string ITEM_SENTENCE = "Your item is";
     // MAKES STRING "item_name_input" ALL UPPERCASE
-    transform(item_name_input.begin(), item_name_input.end(), item_name_input.begin(), toupper);  // MAKES STRING VARIABLE UPPERCASE
     cout << right << setw(40) << left << ITEM_SENTENCE << item_name_input << endl;
     fOutStream << right << setw(40) << left << ITEM_SENTENCE << item_name_input << endl;
 
