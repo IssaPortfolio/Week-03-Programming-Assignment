@@ -26,3 +26,17 @@ Use the following table to determine the calculations to perform:
 
   
     • If the item is fragile add $2.00 to the shipping cost.
+
+--------------------------------------------------------------------------------
+
+Added Japan destination
+
+|    Order Total:    | Ship to USA: | Ship to Canada: | Ship to Australia: | Ship to Japan: |
+|--------------------|--------------|-----------------|--------------------|----------------|
+| Less Than $50.00   | $6.00        | $8.00           | $10.00             | $12.00         |
+|                                                                          |                |
+| $50.01 to $100.00  | $9.00        | $12.00          | $14.00             | $15.00         |
+|                                                                          |                |
+| $100.01 to $150.00 | $12.00       | $15.00          | $17.00             | $18.00         |
+|                                                                          |                |
+| Over $150.00       | Free         | Free            | Free               | Free           |
