@@ -77,8 +77,9 @@ int main()
     string fragile_input;
     cin >> fragile_input;  // INPUT
     fOutStream << right << setw(49) << left << IS_FRAGILE_SENTENCE << ":" << fragile_input << endl;
+    transform(fragile_input.begin(), fragile_input.end(), fragile_input.begin(), toupper);  // MAKES STRING VARIABLE UPPERCASE
     // CHECKS IF INPUT IS VALID
-    if ((fragile_input != "y" && fragile_input != "Y") && (fragile_input != "n" && fragile_input != "N"))
+    if ((fragile_input != "Y") && (fragile_input != "N"))
     { 
         cout << "\n" << INVALID_INPUT_SENTENCE << endl;
         system("pause");
@@ -232,7 +233,7 @@ int main()
     {
         if (subtotal_input < 50)                                       A range (if subtotal_input is less than 50)
             shipping_cost += 6.00;                                     Adds 6 to double variable "subtotal_input" if conditional is true.
-        else if (subtotal_input >= 50 && subtotal_input <= 100)        "else if" means if first conditional (line 231) was not true then it would get here
+        else if (subtotal_input >= 50 && subtotal_input <= 100)        "else if" means if first conditional (line 234) was not true then it would get here
                                                                        but if it was true then it would ignore "else if" statements 
                                                                        (this leads to saving computer resources, or processing power).
             shipping_cost += 9.00;

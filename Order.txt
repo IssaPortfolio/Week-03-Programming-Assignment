@@ -3,15 +3,15 @@ ITCS 2530 - Programming Assignment for week #3
 ..................................................
 
 
-Please enter the item name (no spaces)...........:jp
-Is the item fragile? (y=yes/n=no)................:y
-Please enter your order total....................:120.00
-Please enter destination. (usa/can/aus/jap)......:jap
+Please enter the item name (no spaces)...........:hjd
+Is the item fragile? (y=yes/n=no)................:Y
+Please enter your order total....................:90.00
+Please enter destination. (usa/can/aus/jap)......:usa
 
-Your item is............................JP
-Your shipping cost is...................$20.00
-You are shipping to.....................JAP
-Your total shipping costs are...........$140.00
+Your item is............................HJD
+Your shipping cost is...................$11.00
+You are shipping to.....................USA
+Your total shipping costs are...........$101.00
 
 
 
