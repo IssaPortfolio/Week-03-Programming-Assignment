@@ -10,17 +10,17 @@
 /                                                                                                          /
 /       Use the following table to determine the calculations to perform:                                  /
 /                                                                                                          /
-/            ----------------------------------------------------------------------------                  /
-/            |    Order Total:    | Ship to USA: | Ship to Canada: | Ship to Australia: |                  /
-/            |--------------------|--------------|-----------------|--------------------|                  /
-/            | Less Than $50.00   | $6.00        | $8.00           | $10.00             |                  /
-/            |--------------------|--------------|-----------------|--------------------|                  /
-/            | $50.01 to $100.00  | $9.00        | $12.00          | $14.00             |                  /
-/            |--------------------|--------------|-----------------|--------------------|                  /
-/            | $100.01 to $150.00 | $12.00       | $15.00          | $17.00             |                  /
-/            |--------------------|--------------|-----------------|--------------------|                  /
-/            | Over $150.00       | Free         | Free            | Free               |                  /
-/            ----------------------------------------------------------------------------                  /
+/           --------------------------------------------------------------------------------------------   /           
+/           |    Order Total:    | Ship to USA: | Ship to Canada: | Ship to Australia: | Ship to Japan |   /             
+/           |--------------------|--------------|-----------------|--------------------|---------------|   /              
+/           | Less Than $50.00   | $6.00        | $8.00           | $10.00             | $12.00        |   /
+/           |--------------------|--------------|-----------------|--------------------|---------------|   /             
+/           | $50.01 to $100.00  | $9.00        | $12.00          | $14.00             | $15.00        |   /
+/           |--------------------|--------------|-----------------|--------------------|---------------|   /               
+/           | $100.01 to $150.00 | $12.00       | $15.00          | $17.00             | $18.00        |   /  
+/           |--------------------|--------------|-----------------|--------------------|---------------|   /              
+/           | Over $150.00       | Free         | Free            | Free               | Free          |   / 
+/           --------------------------------------------------------------------------------------------   /             
 /                                                                                                          /
 /           If the item is fragile add $2.00 to the shipping cost.                                         /
 /                                                                                                          /
@@ -95,13 +95,13 @@ int main()
 
 
     //********* DESTINATION *********//
-    const string DESTINATION_SENTENCE= "Please enter destination. (usa/can/aus)";
+    const string DESTINATION_SENTENCE= "Please enter destination. (usa/can/aus/jap)";
     cout << right << setw(49) << left << DESTINATION_SENTENCE << ":";
     string destination_input;
     cin >> destination_input;  // INPUT
     fOutStream << right << setw(49) << left << DESTINATION_SENTENCE << ":" << destination_input << endl;
     transform(destination_input.begin(), destination_input.end(), destination_input.begin(), toupper);  // MAKES STRING VARIABLE UPPERCASE
-    if ((destination_input != "USA") && (destination_input != "CAN") && (destination_input != "AUS"))
+    if ((destination_input != "USA") && (destination_input != "CAN") && (destination_input != "AUS") && (destination_input != "JAP"))
     {
         cout << "\n" << INVALID_INPUT_SENTENCE << endl;
         system("pause");
@@ -159,6 +159,18 @@ int main()
             shipping_cost += 14.00;
         else if (subtotal_input >= 100.01 && subtotal_input <= 150)
             shipping_cost += 17.00;
+        if (subtotal_input > 150)
+            shipping_cost += 0.00;
+    }
+
+    else if (destination_input == "JAP")
+    {
+        if (subtotal_input < 50)
+            shipping_cost += 12.00;
+        else if (subtotal_input >= 50 && subtotal_input <= 100)
+            shipping_cost += 15.00;
+        else if (subtotal_input >= 100.01 && subtotal_input <= 150)
+            shipping_cost += 18.00;
         if (subtotal_input > 150)
             shipping_cost += 0.00;
     }
