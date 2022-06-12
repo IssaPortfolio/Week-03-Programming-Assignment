@@ -11,16 +11,16 @@
 /       Use the following table to determine the calculations to perform:                                  /
 /                                                                                                          /
 /           --------------------------------------------------------------------------------------------   /           
-/           |    Order Total:    | Ship to USA: | Ship to Canada: | Ship to Australia: | Ship to Japan |   /             
-/           |--------------------|--------------|-----------------|--------------------|---------------|   /              
-/           | Less Than $50.00   | $6.00        | $8.00           | $10.00             | $12.00        |   /
-/           |--------------------|--------------|-----------------|--------------------|---------------|   /             
-/           | $50.01 to $100.00  | $9.00        | $12.00          | $14.00             | $15.00        |   /
-/           |--------------------|--------------|-----------------|--------------------|---------------|   /               
-/           | $100.01 to $150.00 | $12.00       | $15.00          | $17.00             | $18.00        |   /  
-/           |--------------------|--------------|-----------------|--------------------|---------------|   /              
-/           | Over $150.00       | Free         | Free            | Free               | Free          |   / 
-/           --------------------------------------------------------------------------------------------   /             
+/           |    Order Total:    | Ship to USA: | Ship to Canada: | Ship to Australia: | Ship to Japan: |  /             
+/           |--------------------|--------------|-----------------|--------------------|----------------|  /              
+/           | Less Than $50.00   | $6.00        | $8.00           | $10.00             | $12.00         |  /
+/           |--------------------|--------------|-----------------|--------------------|----------------|  /             
+/           | $50.01 to $100.00  | $9.00        | $12.00          | $14.00             | $15.00         |  /
+/           |--------------------|--------------|-----------------|--------------------|----------------|  /               
+/           | $100.01 to $150.00 | $12.00       | $15.00          | $17.00             | $18.00         |  /  
+/           |--------------------|--------------|-----------------|--------------------|----------------|  /              
+/           | Over $150.00       | Free         | Free            | Free               | Free           |  / 
+/           ---------------------------------------------------------------------------------------------  /             
 /                                                                                                          /
 /           If the item is fragile add $2.00 to the shipping cost.                                         /
 /                                                                                                          /
@@ -232,7 +232,7 @@ int main()
     {
         if (subtotal_input < 50)                                       A range (if subtotal_input is less than 50)
             shipping_cost += 6.00;                                     Adds 6 to double variable "subtotal_input" if conditional is true.
-        else if (subtotal_input >= 50 && subtotal_input <= 100)        "else if" means if first conditional (line 219) was not true then it would get here
+        else if (subtotal_input >= 50 && subtotal_input <= 100)        "else if" means if first conditional (line 231) was not true then it would get here
                                                                        but if it was true then it would ignore "else if" statements 
                                                                        (this leads to saving computer resources, or processing power).
             shipping_cost += 9.00;
